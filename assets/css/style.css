@@ -1,0 +1,178 @@
+#rigaIntestazione{
+	flex-wrap: nowrap;
+	width: 100%;
+ }
+
+@media screen and (max-width: 992px){
+	#titoloWM{
+		display: none;
+	}
+}
+
+.floatRight {
+	float: right;
+}
+
+.titolo {
+	font-size: 20pt;
+}
+
+#btnPrevisioni {
+	padding:1.5%;
+}
+
+#imgCerca {
+	width: 80%;
+	height: 80%;
+}
+
+#switchScuro {
+	padding-top: 10px;
+}
+
+#github {
+	height: 30px;
+	width: auto;
+}
+
+#btnPosizAttuale{
+	margin-left:15px;
+}
+
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: white;
+}
+
+.carousel-item {
+	height: 35rem;
+	background-color: darkgrey;
+	color: white;
+	position:relative;
+	background-position: center;
+	background-size: cover;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	width: 5%;
+}
+
+#myCarousel .container {
+	position: absolute;
+	bottom:0;
+	left:5%;
+	right: 0;
+	padding-bottom: 50px;
+}
+
+#myCarousel p {
+	font-size: large;
+}
+
+#myCarousel a {
+	border: solid 1.5px white;
+}
+
+.overlay-image{
+	position: absolute;
+	bottom:0;
+	left:0;
+	right: 0;
+	top:0;
+	background-position: center;
+	background-size: cover;
+	opacity: 0.7;
+}
+
+#londra {
+	background-image: url("../img/londra.jpg");
+}
+#parigi {
+	background-image: url("../img/parigi.jpg");
+}
+#dublino {
+	background-image: url("../img/dublino.jpg");
+}
+#lisbona {
+	background-image: url("../img/lisbona.jpg");
+}
+#madrid {
+	background-image: url("../img/madrid.jpg");
+}
+
+@media screen and (min-width: 1200px){
+	#londra {
+		background-image: url("../img/londraTagliata.jpg");
+	}
+	#parigi {
+		background-image: url("../img/parigiTagliata.jpg");
+	}
+	#dublino {
+		background-image: url("../img/dublinoTagliata.jpg");
+	}
+	#lisbona {
+		background-image: url("../img/lisbonaTagliata.jpg");
+	}
+	#madrid {
+		background-image: url("../img/madridTagliata.jpg");
+	}
+}
+
+
+main {
+	padding: 2rem;
+	text-align: center;
+	background-color: #c8e9f9;
+	/*#e3f2fd;*/
+	/*#e3f2fd;*/
+	padding-bottom: 0px;
+	color: #6E7076;
+}
+
+#citIta {
+	bottom:0;
+	left:0;
+	right: 0;
+	top:0;
+	padding-bottom: 30px;
+}
+
+main h5 {
+	padding-top: 10%;
+}
+
+.tonda {
+	border-radius: 50% 50%;
+}
+
+.giorni {
+	padding-bottom: 5%;
+}
+
+#articoli  {
+	padding: 2rem;
+	padding-bottom: 0px;
+	text-align: justify;
+	color: #6E7076;
+}
+
+#map {
+	height: 500px;
+	width: 100%;
+	padding: 20px;
+	margin-top: 30px;
+}
+
+footer {
+	color: #6E7076;
+}
+
+.footer-down {
+	position: absolute;
+	bottom:0;
+	left:0;
+}
+
+.pac-container{
+	z-index:1500;
+}

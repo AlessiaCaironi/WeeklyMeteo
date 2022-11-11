@@ -1,0 +1,43 @@
+#containerPrincipale {
+  padding-bottom: 30px;
+}
+
+#nomeCit {
+  margin-top:55px;
+  margin-bottom: 25px;
+}
+
+#giornoCorrente {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#iconCorr{
+  margin-top: 45%;
+}
+
+#g1 {
+  padding-top: 15%;
+}
+
+#datiCorr {
+  padding-top: 5%;
+  text-align: left;
+  padding-left: 10%;
+}
+
+p {
+  padding: 0;
+  margin:0;
+}
+
+#descCorr {
+  margin-top:4%;
+}
+
+#iconFut2, #iconFut3, #iconFut4 {
+  margin-top : 10%;
+}
+
+.grassetto {
+  font-weight: 600;
+}

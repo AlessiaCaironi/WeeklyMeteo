@@ -1,0 +1,58 @@
+.dark-mode-body {
+	background-color: #293133;
+	color:white;
+}
+
+.dark-mode-main {
+	background-color: #5F5F5F;
+	color:white;
+}
+
+.dark-mode-citIta{
+	color:white;
+}
+
+.dark-mode-foto{
+	opacity: 0.5;
+}
+
+.dark-mode-articoli {
+	color: white;
+}
+
+.dark-mode-footer {
+	color: white;
+}
+
+.dark-mode-foto {
+	opacity: 0.6;
+}
+
+.dark-mode-main-credits {
+	background-color: #293133;
+	color:white;
+}
+
+.dark-mode-body-credits {
+	background-color: #293133;
+	color:white;
+}
+
+.dark-mode-footer-credits {
+	color:white;
+}
+
+
+.dark-mode-body-ricerca{
+	background-color: #293133;
+	color:white;
+}
+
+.dark-mode-main-ricerca{
+	background-color: #293133;
+	color:white;
+}
+
+.dark-mode-giornoCorrente {
+	background-color: #5F5F5F;
+}

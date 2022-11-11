@@ -1,0 +1,16 @@
+"@context": "https://schema.org/",
+"@type": "NewsMediaOrganization",
+"name": "Weekly Meteo",
+"address": {
+    "@type": "PostalAddress",
+ 	  "addressLocality": "Bergamo, Italia",
+    "postalCode": "24122",
+    "streetAddress": "Via TalDeiTali, 1"
+},
+"email": "info@weeklymeteo.com",
+"contactPoint" : {
+    "@type" : "ContactPoint",
+    "telephone" : "(+39) 11 00 11 00",
+    "contactType" : "Servizio clienti"
+},
+"sameAs": "https://www.facebook.com/weeklymeteo"
