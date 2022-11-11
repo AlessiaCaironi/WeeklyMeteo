@@ -1,1 +1,1 @@
-# WeeklyMeteo
+# Weekly Meteo
