@@ -14,17 +14,14 @@
     <!-- css generale -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <!-- css dark-mode -->
-    <link rel="stylesheet" type="text/css" href="css/tema_scuro.css">
-
     <title>Weekly Meteo</title>
 
     <!-- includo file json contenente lo schema.org -->
     <script type="application/ld+json" src="schemaorg.json"></script>
 
     <!-- autocompletamento -->
-    <script type="text/javascript" src="js/addScriptGoogle.js"></script>
-    <script type="text/javascript" src="js/autocompletamento.js"></script>
+    <script src="js/addScriptGoogle.js"></script>
+    <script src="js/autocompletamento.js"></script>
 
   </head>
   <body>
@@ -38,7 +35,7 @@
             <!-- logo -->
             <div class="col-2 col-sm-2 col-lg-4" >
               <a href="index.html" class="navbar-brand mb-0 h1 titolo">
-                <img class="d-inline-block aling-top" src="img/logo2.png" alt="Logo" width="45" height="45">
+                <img class="d-inline-block aling-top" src="img/logo2.webp" alt="Logo" width="45" height="45">
                 <span id="titoloWM">Weekly Meteo</span>
               </a>
             </div>
@@ -46,8 +43,8 @@
             <!-- barra ricerca -->
             <div id="divRicerca" class="col-8 col-sm-8 col-lg-4">
               <form class="d-flex" method="POST" action="/ricerca">
-                <input type="text" class="form-control me-2"placeholder="Search Locations" id='txtCity'  autocomplete="off">
-                <button type="submit" class="btn btn-outline-light" id="btnPrevisioni"> <img src="/img/search-location.png" alt="find"  id="imgCerca"> </button>
+                <input type="text" class="form-control me-2" placeholder="Search Locations" id='txtCity'  autocomplete="off">
+                <button type="submit" class="btn btn-outline-light" id="btnPrevisioni"> <img src="/img/search-location.webp" alt="find"  id="imgCerca"> </button>
               </form>
             </div>
 
@@ -67,12 +64,12 @@
                     <!-- switch dark mode -->
                     <div class="form-check form-switch" id="switchScuro">
                       <span style="color:white;" id="emoji">☼</span>
-                      <input class="form-check-input" type="checkbox" role="switch" onclick="temaScuro()" />
+                      <input class="form-check-input" type="checkbox" role="switch" onclick="temaScuro()">
                     </div>
                   </li>
                   <li class="nav-item">
                     <form  id="formPosizAttuale" method="POST" action="/ricerca">
-                      <button type="submit" class="btn" id="btnPosizAttuale"> <img src="/img/placeholder-filled-point.png" alt="Posizione Attuale"> </button>
+                      <button type="submit" class="btn" id="btnPosizAttuale"> <img src="/img/placeholder-filled-point.webp" alt="Posizione Attuale"> </button>
                     </form>
                   </li>
                 </ul>
@@ -94,7 +91,7 @@
           <li>Weather icons made by Josh Bader from <a href="https://codepen.io/joshbader/pen/EjXgqr">www.codepen.io</a> </li>
           <li>Photos from <a href="https://unsplash.com/">www.unsplash.com</a></li>
           <li>Weather information from <a href="https://openweathermap.org/">www.openweathermap.org</a> </li>
-          <li>Articles from <a href="https://www.accuweather.com/">www.accuweather.com</a> </li>
+          <li>Articles from <a href="https://www.timeanddate.com/astronomy/">www.timeanddate.com/astronomy</a> and <a href="https://www.cnet.com/science/space"></a></li>
         </ul>
        </div>
 
@@ -103,10 +100,15 @@
     <!-- footer -->
     <div class="container fixed-bottom">
       <footer class="d-flex flex-wrap justify-content-between py-3 my-4 border-top">
-        <p class="col"><a href="https://github.com/AlessiaCaironi/weeklymeteo" class="nav-link"><img src="../img/github.png" alt='github link' id='github'></a></p>
+        <p class="col"><a href="https://github.com/AlessiaCaironi/WeeklyMeteo" class="nav-link"><img src="../img/github.webp" alt='github link' id='github' height="30px" width="auto"></a></p>
           <p class="col" style="text-align: center;">Alessia Caironi</p>
-          <p class="col" style="text-align: right;">
-          <a href="credits.html"><button type="submit" class="btn btn-primary" id="btnCrediti">Credits</button></a></p>
+
+            <form class="col" method="GET" action="/credits">
+              <p style="text-align: right;">
+              <button type="submit" class="btn btn-primary" id="btnCrediti">Credits</button>
+              </p>
+            </form>
+
       </footer>
     </div>
 
@@ -114,14 +116,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-
+    <!-- css dark-mode -->
+    <link rel="stylesheet" type="text/css" href="css/tema_scuro.css">
     <!-- tema chiaro/scuro -->
-    <script type="text/javascript" src="js/tema_ChiaroScuro.js"></script>
-
-
+    <script src="js/tema_ChiaroScuro.js"></script>
 
     <!-- event listeners -->
-    <script type="text/javascript" src="js/eventListeners.js"></script>
+    <script src="js/eventListeners.js"></script>
 
 
   </body>

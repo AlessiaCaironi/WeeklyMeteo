@@ -15,15 +15,9 @@
     <!-- css generale -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <!-- css icone -->
-    <link rel="stylesheet" type="text/css" href="css/icone.css">
-
-    <!-- css dark-mode -->
-    <link rel="stylesheet" type="text/css" href="css/tema_scuro.css">
-
     <!-- autocompletamento google -->
-    <script type="text/javascript" src="js/addScriptGoogle.js"></script>
-    <script type="text/javascript" src="js/autocompletamento.js"></script>
+    <script src="js/addScriptGoogle.js"></script>
+    <script src="js/autocompletamento.js"></script>
 
     <title>Weekly Meteo</title>
 
@@ -43,7 +37,7 @@
             <!-- logo -->
             <div class="col-2 col-sm-2 col-lg-4" >
               <a href="index.html" class="navbar-brand mb-0 h1 titolo">
-                <img class="d-inline-block aling-top" src="img/logo2.png" alt="Logo" width="45" height="45">
+                <img class="d-inline-block aling-top" src="img/logo2.webp" alt="Logo" width="45" height="45">
                 <span id="titoloWM">Weekly Meteo</span>
               </a>
             </div>
@@ -52,7 +46,9 @@
             <div id="divRicerca" class="col-8 col-sm-8 col-lg-4">
               <form class='d-flex' id="formRicerca" method="POST" action="/ricerca">
                 <input type="text" class="form-control me-2" placeholder="Search Locations" id='txtCity'>
-                <button type="submit" class="btn btn-outline-light" id="btnPrevisioni"> <img src="/img/search-location.png" alt="find" id="imgCerca"></button>
+                <button type="submit" class="btn btn-outline-light" id="btnPrevisioni">
+                  <img src="/img/search-location.webp" alt="find" id="imgCerca">
+                </button>
               </form>
             </div>
 
@@ -72,12 +68,12 @@
                     <!-- switch dark mode -->
                     <div class="form-check form-switch" id="switchScuro">
                       <span style="color:white;" id="emoji">☼</span>
-                      <input class="form-check-input" type="checkbox" role="switch" onclick="temaScuro()" />
+                      <input class="form-check-input" type="checkbox" role="switch" onclick="temaScuro()">
                     </div>
                   </li>
                   <li class="nav-item">
                     <form  id="formPosizAttuale" method="POST" action="/ricerca">
-                      <button type="submit" class="btn" id="btnPosizAttuale"> <img src="/img/placeholder-filled-point.png" alt="Posizione Attuale"> </button>
+                      <button type="submit" class="btn" id="btnPosizAttuale"> <img src="/img/placeholder-filled-point.webp" alt="Posizione Attuale"> </button>
                     </form>
                   </li>
                 </ul>
@@ -116,7 +112,7 @@
                 <!-- icona-->
               </div>
             </div>
-            <form id="formRicerca" method="POST" action="/ricerca">
+            <form method="POST" action="/ricerca">
               <button type="submit" class="btn btn-outline-light" id="btnLisbon">Forecast</button>
             </form>
           </div>
@@ -133,7 +129,7 @@
                 <!-- icona -->
               </div>
             </div>
-            <form id="formRicerca" method="POST" action="/ricerca">
+            <form method="POST" action="/ricerca">
               <button type="submit" class="btn btn-outline-light" id="btnLondon">Forecast</button>
             </form>
           </div>
@@ -150,7 +146,7 @@
                 <!-- icona -->
               </div>
             </div>
-            <form id="formRicerca" method="POST" action="/ricerca">
+            <form method="POST" action="/ricerca">
               <button type="submit" class="btn btn-outline-light" id="btnDublin">Forecast</button>
             </form>
           </div>
@@ -167,7 +163,7 @@
                 <!-- icona -->
               </div>
             </div>
-            <form id="formRicerca" method="POST" action="/ricerca">
+            <form method="POST" action="/ricerca">
               <button type="submit" class="btn btn-outline-light" id="btnParis">Forecast</button>
             </form>
           </div>
@@ -184,7 +180,7 @@
                 <!-- icona -->
               </div>
             </div>
-            <form id="formRicerca" method="POST" action="/ricerca">
+            <form method="POST" action="/ricerca">
               <button type="submit" class="btn btn-outline-light" id="btnMadrid">Forecast</button>
             </form>
           </div>
@@ -212,24 +208,25 @@
           <div class="col-12">
             <h2 id="citIta">Italian Cities</h2>
           </div>
+
           <div class="col-md-2 col-sm-4 giorni" >
             <div id="iconBergamo">
               <!-- icona -->
             </div>
-
             <h5>Bergamo</h5>
             <p id="tempBergamo"></p>
-            <form id="formRicerca" method="POST" action="/ricerca">
+            <form method="POST" action="/ricerca">
               <button type="submit" class="btn btn-primary" id="btnBergamo">Forecast</button>
             </form>
           </div>
+
           <div class="col-md-2 col-sm-4 giorni">
             <div id="iconMilano">
               <!-- icona -->
             </div>
             <h5>Milano</h5>
             <p id="tempMilano"></p>
-            <form id="formRicerca" method="POST" action="/ricerca">
+            <form method="POST" action="/ricerca">
               <button type="submit" class="btn btn-primary" id="btnMilano">Forecast</button>
             </form>
           </div>
@@ -239,7 +236,7 @@
             </div>
             <h5>Roma</h5>
             <p id="tempRoma"></p>
-            <form id="formRicerca" method="POST" action="/ricerca">
+            <form method="POST" action="/ricerca">
               <button type="submit" class="btn btn-primary" id="btnRoma">Forecast</button>
             </form>
           </div>
@@ -249,7 +246,7 @@
             </div>
             <h5>Bologna</h5>
             <p id="tempBologna"></p>
-            <form id="formRicerca" method="POST" action="/ricerca">
+            <form method="POST" action="/ricerca">
               <button type="submit" class="btn btn-primary" id="btnBologna">Forecast</button>
             </form>
           </div>
@@ -259,7 +256,7 @@
             </div>
             <h5>Trento</h5>
             <p id="tempTrento"></p>
-            <form id="formRicerca" method="POST" action="/ricerca">
+            <form method="POST" action="/ricerca">
               <button type="submit" class="btn btn-primary" id="btnTrento">Forecast</button>
             </form>
           </div>
@@ -269,7 +266,7 @@
             </div>
             <h5>Palermo</h5>
             <p id="tempPalermo"></p>
-            <form id="formRicerca" method="POST" action="/ricerca">
+            <form method="POST" action="/ricerca">
               <button type="submit" class="btn btn-primary" id="btnPalermo">Forecast</button>
             </form>
           </div>
@@ -280,21 +277,27 @@
     <div id="articoli" class="container">
         <div id="articolo1" class="row">
           <div class="col-md-8 col-lg-10">
-            <h4>Nov. 8: Total Lunar Eclipse </h4>
-            <p> One of the biggest astronomy events of 2022 will take place in the early morning sky on Tuesday, Nov. 8, as the sun, Earth and moon align to create a total lunar eclipse. No special equipment like a telescope is needed to view a lunar eclipse, although partly to mainly clear weather conditions are a necessity. Since the eclipse is a long-duration event, only a few breaks in the clouds are needed to catch a glimpse of the event. As the moon passes through Earth's shadow, it will gradually change color to appear rusty orange or dark red in the sky. The colorful transformation is why some refer to a total lunar eclipse as a Blood Moon. November's full moon is also known as a Beaver Moon.</p>
+            <h4>Nov. 17-18: Leonid meteor shower</h4>
+            <p class="smallFont">By <a href="https://www.cnet.com/science/space/leonid-meteor-shower-peaks-tonight-shooting-star-outburst-possible-tomorrow/">CNET - Eric Mack</a> </p>
+            <p> A swarm of fireballs from the Taurid meteor shower has already made November a fiery month for meteors. Now, the Leonids will hit their stride as soon as Thursday evening and could bring an all-out meteor storm the following night. While the Taurids are known for traveling relatively slowly as they burn up in the atmosphere and producing a number of fireballs (especially this year), the Leonids are considered a swift shower, producing fast, bright shooting stars.</p>
           </div>
           <!-- d-sm-none d-md-block per nascondere img se lo schermo è sm o xs-->
            <div class="col-md-4 d-sm-none d-none d-md-block col-lg-2">
-            <img src="img/art1.jpg" alt="neve" width="100%" id="imgArt1">
+            <img src="img/art1.webp" alt="lunar eclipse" id="imgArt1" width="100%" height="auto">
+              <p class="superSmallFont">Photo by <a href="https://unsplash.com/@kreyatif?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Michał Mancewicz</a> on <a href="https://unsplash.com/s/photos/meteor-shower?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
           </div>
         </div>
         <div id="articolo2" class="row border-top my-4 py-4">
           <div class="col-md-4 d-sm-none d-none d-md-block col-lg-2">
-            <img src="img/art2.jpg" alt="neve" width="100%" id="imgArt2">
+            <img src="img/art2.webp" alt="Leonid meteor shower" id="imgArt2" width="100%" height="auto">
+            <p class="superSmallFont">Photo by <a href="https://unsplash.com/@vixenly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kym MacKinnon</a> on <a href="https://unsplash.com/s/photos/cold-moon?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
           </div>
           <div class="col-md-8 col-lg-10">
-            <h4>Nov. 17-18: Leonid meteor shower </h4>
-            <p> Like the Taurid meteor showers that will kick off November in grand fashion, this year's Leonid meteor shower, which peaks on the night of Thursday, Nov. 17, into the early hours of Friday, Nov. 18, could outperform typical expectations. During an average year, the Leonids feature approximately 15 meteors per hour, or around what was observed during the peak of the Orionids in mid-October. However, the AMS explained that recent calculations by various astronomers suggest that hourly rates this year could top out between 50 and 200 meteors per hour. If this prediction comes to fruition, it could make the Leonids the best meteor shower of 2022. </p>
+            <h4>Dec. 8: Cold Moon </h4>
+            <p class="smallFont">By <a href="https://www.timeanddate.com/astronomy/moon/cold.html">TimeAndDate - Vigdis Hocken</a></p>
+            <p> December is the month when winter truly begins in most of the Northern Hemisphere. Most of the ancient Full Moon names are related to the low temperatures and darkness of December. The most common name is the Cold Moon, while another is Long Night Moon. The Anglo-Saxon name was the Moon Before Yule, which is the ancient celebration around the winter solstice.
+            The December Full Moon is also called Oak Moon, while a Celtic name was Wolf Moon. Today, however, this name is more common for the January Full Moon.</p>
+
           </div>
         </div>
     </div>
@@ -302,31 +305,34 @@
     <!-- footer -->
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between py-3 my-4 border-top">
-          <p class="col"><a href="https://github.com/AlessiaCaironi/weeklymeteo" class="nav-link"><img src="../img/github.png" alt='github link' id='github'></a></p>
+          <p class="col"><a href="https://github.com/AlessiaCaironi/WeeklyMeteo" class="nav-link"><img src="../img/github.webp" alt='github link' id='github' height="30px" width="auto"></a></p>
           <p class="col" style="text-align: center;">Alessia Caironi</p>
-          <p class="col" style="text-align: right;">
-          <a href="credits.html"><button type="submit" class="btn btn-primary" id="btnCrediti">Credits</button></a></p>
+          <form class="col" method="GET" action="/credits">
+            <p style="text-align: right;">
+              <button type="submit" class="btn btn-primary" id="btnCrediti">Credits</button>
+            </p>
+          </form>
       </footer>
     </div>
-
-    <!--<button class="ghost-button" id="load-api">Load APY_KEY</button>-->
 
     <!-- Popper e Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
-    <!-- weather -->
-    <script type="text/javascript" src="js/weatherIndex.js"></script>
-    <!-- tema chiaro/scuro -->
-    <script type="text/javascript" src="js/tema_ChiaroScuro.js"></script>
+    <!-- css icone -->
+    <link rel="stylesheet" type="text/css" href="css/icone.css">
+    <!-- css dark-mode -->
+    <link rel="stylesheet" type="text/css" href="css/tema_scuro.css">
 
+    <!-- weather -->
+    <script src="js/weatherIndex.js"></script>
+    <!-- tema chiaro/scuro -->
+    <script src="js/tema_ChiaroScuro.js"></script>
 
     <!-- event listeners -->
-    <script type="text/javascript" src="js/eventListeners.js"></script>
-
+    <script src="js/eventListeners.js"></script>
     <!-- event listeners index -->
-    <script type="text/javascript" src="js/eventListenersIndex.js"></script>
-
+    <script src="js/eventListenersIndex.js"></script>
 
 
   </body>

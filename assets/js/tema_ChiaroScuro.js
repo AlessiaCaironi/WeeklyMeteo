@@ -39,7 +39,7 @@ function temaScuro(){
 	document.getElementById('btnCrediti').classList.toggle("btn-outline-light");
 
 	// index.html
-	if ((location == '/index.html') || (location == '/index')){
+	if ((location == '/index.html') || (location == '/index') || (location == '/')){
 
 		var elementBody = document.body;
 		elementBody.classList.toggle("dark-mode-body");

@@ -17,20 +17,14 @@
     <!-- css pagina ricerca -->
     <link rel="stylesheet" type="text/css" href="css/ricerca.css">
 
-    <!-- css icone -->
-    <link rel="stylesheet" type="text/css" href="css/icone.css">
-
-    <!-- css dark-mode -->
-    <link rel="stylesheet" type="text/css" href="css/tema_scuro.css">
-
     <title>Weekly Meteo</title>
 
     <!-- includo file json contenente lo schema.org -->
     <script type="application/ld+json" src="schemaorg.json"></script>
 
     <!-- autocompletamento -->
-    <script type="text/javascript" src="js/addScriptGoogle.js"></script>
-    <script type="text/javascript" src="js/autocompletamento.js"></script>
+    <script src="js/addScriptGoogle.js"></script>
+    <script src="js/autocompletamento.js"></script>
 
 
   </head>
@@ -45,7 +39,7 @@
             <!-- logo -->
             <div class="col-2 col-sm-2 col-lg-4" >
               <a href="index.html" class="navbar-brand mb-0 h1 titolo">
-                <img class="d-inline-block aling-top" src="img/logo2.png" alt="Logo" width="45" height="45">
+                <img class="d-inline-block aling-top" src="img/logo2.webp" alt="Logo" width="45" height="45">
                 <span id="titoloWM">Weekly Meteo</span>
               </a>
             </div>
@@ -54,7 +48,9 @@
             <div id="divRicerca" class="col-8 col-sm-8 col-lg-4">
               <form class="d-flex" method="POST" action="/ricerca">
                 <input type="text" class="form-control me-2" placeholder="Search Locations" id='txtCity'  autocomplete="off">
-                <button type="submit" class="btn btn-outline-light" id="btnPrevisioni"> <img src="/img/search-location.png" alt="find"  id="imgCerca"></button>
+                <button type="submit" class="btn btn-outline-light" id="btnPrevisioni">
+                  <img src="/img/search-location.webp" alt="find"  id="imgCerca">
+                </button>
               </form>
             </div>
 
@@ -74,12 +70,12 @@
                     <!-- switch dark mode -->
                     <div class="form-check form-switch" id="switchScuro">
                       <span style="color:white;" id="emoji">☼</span>
-                      <input class="form-check-input" type="checkbox" role="switch" onclick="temaScuro()" />
+                      <input class="form-check-input" type="checkbox" role="switch" onclick="temaScuro()">
                     </div>
                   </li>
                   <li class="nav-item">
                     <form  id="formPosizAttuale" method="POST" action="/ricerca">
-                      <button type="submit" class="btn" id="btnPosizAttuale"> <img src="/img/placeholder-filled-point.png" alt="Posizione Attuale"> </button>
+                      <button type="submit" class="btn" id="btnPosizAttuale"> <img src="/img/placeholder-filled-point.webp" alt="Posizione Attuale"> </button>
                     </form>
                   </li>
                 </ul>
@@ -95,9 +91,10 @@
     <main>
       <div class="container" id="containerPrincipale">
         <div class="row">
-            <h2 id="nomeCit" class="grassetto"></h2>
+            <h2 id="nomeCit" class="grassetto">nomeCit</h2>
         </div>
         <div class="row">
+
           <div class="col-lg-6 col-md-12 giorni" id="giornoCorrente">
             <div class="container">
               <div class="row">
@@ -111,7 +108,7 @@
                 <div class="col-8">
                   <div class="container">
                     <div class="row">
-                      <h5 id="g1" class="grassetto"></h5>
+                      <h5 id="g1" class="grassetto">g1</h5>
                     </div>
                     <div class="row" id="datiCorr">
                       <div class="col-xl-6 col-lg-12 col-md-6 col-sm-12" >
@@ -128,34 +125,38 @@
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-            </div>
-            </div>
           <div class="col-lg-2 col-md-4 giorni" >
-            <h5 id='g2' class="grassetto"></h5>
+            <h5 id='g2' class="grassetto">g2</h5>
             <div id='iconFut2'>
               <!-- icona -->
             </div>
             <p id="descFut2"></p>
             <p id='tempFut2'></p>
           </div>
+
           <div class="col-lg-2 col-md-4 giorni" >
-            <h5 id='g3' class="grassetto"></h5>
+            <h5 id='g3' class="grassetto">g3</h5>
             <div id='iconFut3'>
               <!-- icona -->
             </div>
             <p id="descFut3"></p>
             <p id='tempFut3'></p>
           </div>
+
           <div class="col-lg-2 col-md-4 giorni" >
-            <h5 id='g4' class="grassetto"></h5>
+            <h5 id='g4' class="grassetto">g4</h5>
             <div id='iconFut4'>
               <!-- icona -->
             </div>
             <p id="descFut4"></p>
             <p id='tempFut4'></p>
           </div>
+
         </div>
+
         <div class="row" id="contMappe">
           <div id="map">
             <!-- mappa google -->
@@ -169,10 +170,13 @@
     <!-- footer -->
     <div class="container">
       <footer class="d-flex flex-wrap justify-content-between py-3 my-4 border-top">
-        <p class="col"><a href="https://github.com/AlessiaCaironi/weeklymeteo" class="nav-link"><img src="../img/github.png" alt='github link' id='github'></a></p>
+        <p class="col"><a href="https://github.com/AlessiaCaironi/WeeklyMeteo" class="nav-link"><img src="../img/github.webp" alt='github link' id='github' height="30px" width="auto"></a></p>
           <p class="col" style="text-align: center;">Alessia Caironi</p>
-          <p class="col" style="text-align: right;">
-          <a href="credits.html"><button type="submit" class="btn btn-primary" id="btnCrediti">Credits</button></a></p>
+          <form class="col" method="GET" action="/credits">
+            <p style="text-align: right;">
+              <button type="submit" class="btn btn-primary" id="btnCrediti">Credits</button>
+            </p>
+          </form>
       </footer>
     </div>
 
@@ -180,15 +184,19 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
+    <!-- css icone -->
+    <link rel="stylesheet" type="text/css" href="css/icone.css">
+    <!-- css dark-mode -->
+    <link rel="stylesheet" type="text/css" href="css/tema_scuro.css">
 
     <!-- tema chiaro/scuro -->
-    <script type="text/javascript" src="js/tema_ChiaroScuro.js"></script>
+    <script src="js/tema_ChiaroScuro.js"></script>
 
     <!-- weather -->
-    <script type="text/javascript" src="js/weatherRicerca.js"></script>
+    <script src="js/weatherRicerca.js"></script>
 
     <!-- event listeners -->
-    <script type="text/javascript" src="js/eventListeners.js"></script>
+    <script src="js/eventListeners.js"></script>
 
 
 

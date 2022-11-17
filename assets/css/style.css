@@ -30,11 +30,6 @@
 	padding-top: 10px;
 }
 
-#github {
-	height: 30px;
-	width: auto;
-}
-
 #btnPosizAttuale{
 	margin-left:15px;
 }
@@ -85,36 +80,36 @@
 }
 
 #londra {
-	background-image: url("../img/londra.jpg");
+	background-image: url("../img/londra.webp");
 }
 #parigi {
-	background-image: url("../img/parigi.jpg");
+	background-image: url("../img/parigi.webp");
 }
 #dublino {
-	background-image: url("../img/dublino.jpg");
+	background-image: url("../img/dublino.webp");
 }
 #lisbona {
-	background-image: url("../img/lisbona.jpg");
+	background-image: url("../img/lisbona.webp");
 }
 #madrid {
-	background-image: url("../img/madrid.jpg");
+	background-image: url("../img/madrid.webp");
 }
 
 @media screen and (min-width: 1200px){
 	#londra {
-		background-image: url("../img/londraTagliata.jpg");
+		background-image: url("../img/londraTagliata.webp");
 	}
 	#parigi {
-		background-image: url("../img/parigiTagliata.jpg");
+		background-image: url("../img/parigiTagliata.webp");
 	}
 	#dublino {
-		background-image: url("../img/dublinoTagliata.jpg");
+		background-image: url("../img/dublinoTagliata.webp");
 	}
 	#lisbona {
-		background-image: url("../img/lisbonaTagliata.jpg");
+		background-image: url("../img/lisbonaTagliata.webp");
 	}
 	#madrid {
-		background-image: url("../img/madridTagliata.jpg");
+		background-image: url("../img/madridTagliata.webp");
 	}
 }
 
@@ -176,3 +171,12 @@ footer {
 .pac-container{
 	z-index:1500;
 }
+
+ .smallFont{
+	 font-size:0.8rem;
+ }
+
+ .superSmallFont{
+	 font-size:0.65rem;
+	 font-style: italic;
+ }

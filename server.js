@@ -10,7 +10,6 @@ const port = process.env.PORT || 8080;
 //Express static file module
 app.use(express.static(__dirname + '/assets'));
 
-// webWorker
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, '/views/index.html'));
 });
@@ -23,16 +22,8 @@ app.get('/index.html', function (req, res) {
     res.sendFile(path.join(__dirname, '/views/index.html'));
 });
 
-app.get('/ricerca', function (req, res) {
-   	res.sendFile(path.join(__dirname, '/views/ricerca.html'));
-});
-
 app.post('/ricerca', function (req, res) {
    	res.sendFile(path.join(__dirname, '/views/ricerca.html'));
-});
-
-app.get('/ricerca.html', function (req, res) {
-    res.sendFile(path.join(__dirname, '/views/ricerca.html'));
 });
 
 app.get('/credits', function (req, res) {
@@ -47,11 +38,10 @@ app.get('/favicon.ico', function (req, res) {
     res.sendFile(path.join(__dirname, '/favicon.ico'));
 });
 
-app.get('/key', function (req,res) {
+app.post('/key', function (req,res) {
   res.json({
       api_key_google: process.env.API_KEY_GOOGLE,
-      api_weather: process.env.API_KEY_OPENWEATHER,
-      prova: "ciao"
+      api_weather: process.env.API_KEY_OPENWEATHER
   });
   res.end();
 });

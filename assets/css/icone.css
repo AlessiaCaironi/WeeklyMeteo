@@ -3,9 +3,9 @@
   display: inline-block;
   width: 8em;
   height: 6em;
-  font-size: 0.65em; /* control icon size here */
+  font-size: 0.65em; /* qui controllo la dimensione delle icone */
 }
- 
+
 .iconaPiccola{
 	font-size: 0.5em;
 	align-items: center;
@@ -22,8 +22,6 @@
   border-radius: 50%;
   background-color: white;
   box-shadow:
-    /*-2.1875em 0.6875em 0 -0.6875em,
-    2.0625em 0.9375em 0 -0.9375em,*/
     0 0 0 0.375em white,
     -2.1875em 0.6875em 0 -0.3125em white,
     2.0625em 0.9375em 0 -0.5625em white;
@@ -53,8 +51,8 @@
   color: black;
   border-color: black;
 }
-.cloud:nth-child(2):after { 
-  background: black; 
+.cloud:nth-child(2):after {
+  background: black;
   box-shadow: 0 0.4375em 0 -0.0625em black;
 }
 
@@ -220,7 +218,7 @@
 }
 
 
-/* Animations */ 
+/* Animations */
 
 @keyframes spin {
   100% { transform: rotate(360deg); }
@@ -283,7 +281,7 @@
 }
 
 .small {
-	font-size: 0.3em;	
+	font-size: 0.3em;
 	align-items: left;
 }
 

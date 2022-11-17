@@ -1,7 +1,7 @@
 // recupero API key di OpenWeather
 async function getAPI(){
   try{
-    var credenziali = await fetch ('/key', {method: "GET"});
+    var credenziali = await fetch ('/key', {method: "POST"});
     var jsonObjCred = await credenziali.json();
   } catch(err){
     console.error(err);

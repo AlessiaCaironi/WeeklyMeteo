@@ -1,7 +1,7 @@
 // recupero API key di OpenWeather
 async function getAPI(){
   try{
-    var credenziali = await fetch ('/key', {method: "GET"});
+    var credenziali = await fetch ('/key', {method: "POST"});
     var jsonObjCred = await credenziali.json();
   } catch(err){
     console.error(err);
@@ -13,13 +13,14 @@ function initMap(lati, longi, city){
   var map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: lati, lng: longi},
     zoom: 7
-    });
+  });
   var marker = new google.maps.Marker({
     position: {lat: lati, lng: longi},
     map: map,
     title: city
   });
 }
+
 
 var timezone;
 
@@ -112,11 +113,11 @@ async function getMeteo(city) {
     } catch (err){
       console.error(err);
     }
-
     var descCorr = jsonObjMeteo.weather[0].description;
     if(descCorr == 'fog'){
       descCorr = "light rain";
     }
+
     document.getElementById('descCorr').innerText = descCorr.charAt(0).toUpperCase()+descCorr.substring(1).toLowerCase();
 
     document.getElementById('iconCorr').innerHTML = getIcona(descCorr);
